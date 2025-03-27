@@ -19,7 +19,8 @@ export default function Home() {
                     <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
                         Discover whether your dream Amsterdam adventure is within reach. 
                         Amstride helps you navigate the financial possibilities of your trip 
-                        with an interactive, intelligent decision flow.
+                        with an interactive, intelligent decision flow. With us, you can
+                        explore your options and make informed choices.
                     </p>
                     
                     <Link 
