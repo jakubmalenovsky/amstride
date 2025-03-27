@@ -67,7 +67,7 @@ function MachineLearning() {
 
   return (
     <div style={{ padding: '20px' }}>
-      Credit Score for new person:  
+      Credit Score forrrr new person:  
       <form onSubmit={handleSubmit}>
         <input
           type="number"
