@@ -24,6 +24,16 @@ export default function ForwardChain() {
     setShowRecommendation(false);
   };
 
+  // List of museums
+  const museums = [
+    "Stedelijk Museum - Modern & Contemporary Art",
+    "MOCO Museum - Modern & Street Art",
+    "Rijksmuseum - Dutch Golden Age Paintings",
+    "Micropia - Microbiology Museum",
+    "Grote Museum - Human & Nature Connection",
+    "Fabrique des Lumières - Digital Art Experience",
+  ];
+
   // Question Component
   const QuestionCard = ({ question, onYes, onNo }) => (
     <div className="animate-fade-in bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-8 text-center max-w-md mx-auto space-y-6">
@@ -85,7 +95,12 @@ export default function ForwardChain() {
               <CheckCircle2 className="w-16 h-16 mx-auto mb-4" />
               <h2 className="text-3xl font-bold mb-4">You are IN!</h2>
             </div>
-            <p className="text-gray-700 text-lg">List of museums that you will visit is here:</p>
+            <p className="text-gray-700 text-lg">List of museums that you will visit:</p>
+            <ul className="text-gray-700 text-left list-disc pl-6">
+              {museums.map((museum, index) => (
+                <li key={index}>{museum}</li>
+              ))}
+            </ul>
           </div>
         ) : (
           <>{setShowRecommendation(true)}</>
